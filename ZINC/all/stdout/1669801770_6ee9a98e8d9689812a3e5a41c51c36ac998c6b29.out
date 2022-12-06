@@ -1,0 +1,19 @@
+{'dataset_name': 'ZINC', 'basis': 'multinorm', 'epsilon': [0, -0.1, -0.2, -0.3, -0.4, -0.5], 'power': [4, 4, 4, 4, 4, 4], 'seeds': [0], 'num_workers': 8, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '6ee9a98e8d9689812a3e5a41c51c36ac998c6b29', 'time_stamp': '1669801770', 'directory': '../results/ZINC/board/'}
+{'dataset_name': 'ZINC', 'basis': 'multinorm', 'epsilon': [0, -0.1, -0.2, -0.3, -0.4, -0.5], 'power': [4, 4, 4, 4, 4, 4], 'seeds': [0], 'num_workers': 8, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '6ee9a98e8d9689812a3e5a41c51c36ac998c6b29', 'time_stamp': 1669801771, 'directory': '../results/ZINC/board/', 'seed': 0}
+Basis configurations: basis: multinorm, epsilon: [0, -0.1, -0.2, -0.3, -0.4, -0.5], power: [4, 4, 4, 4, 4, 4]
+Generating 10000 graphs for the TRAIN set...
+Pre-processing:   0%|          | 0/10000 [00:00<?, ?it/s]Pre-processing:   0%|          | 0/10000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/rtx/workspace/graphml/zinc/./main.py", line 242, in <module>
+    main()
+  File "/home/rtx/workspace/graphml/zinc/./main.py", line 79, in main
+    run_with_given_seed(config)
+  File "/home/rtx/workspace/graphml/zinc/./main.py", line 95, in run_with_given_seed
+    dataset = MoleculeDataset(name=config.dataset_name, config=config)
+  File "/home/rtx/workspace/graphml/zinc/data_preparation.py", line 134, in __init__
+    self.train = MoleculeDGL(data_dir, 'train', num_graphs=10000, basis=basis, epsilon=epsilon, power=power)
+  File "/home/rtx/workspace/graphml/zinc/data_preparation.py", line 35, in __init__
+    self._prepare()
+  File "/home/rtx/workspace/graphml/zinc/data_preparation.py", line 88, in _prepare
+    g = basis_transform(g, basis=self.basis, epsilon=self.epsilon, power=self.power)
+TypeError: basis_transform() got an unexpected keyword argument 'epsilon'
