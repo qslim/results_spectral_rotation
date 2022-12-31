@@ -1,0 +1,41 @@
+NVIDIA A100-SXM4-40GB 7
+{'dataset_name': 'ogbg-ppa', 'basis': 'GSO', 'epsilon': [0], 'power': [1], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 32, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.7, 'milestones': [20, 40, 60], 'weight_decay': 0.0005, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'S', 'dropout': 0.5}, 'commit_id': '6fa64202477020bcba460f933726586ec95785ca', 'time_stamp': '1672033458', 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/'}
+{'dataset_name': 'ogbg-ppa', 'basis': 'GSO', 'epsilon': [0], 'power': [1], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 32, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.7, 'milestones': [20, 40, 60], 'weight_decay': 0.0005, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'S', 'dropout': 0.5}, 'commit_id': '6fa64202477020bcba460f933726586ec95785ca', 'time_stamp': 1672033461, 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/', 'seed': 0}
+Loading the cached file... (NOTE: delete it if you change the preprocessing settings)
+Bases total: 2
+#Params: 872997
+Epoch 1 training...
+Train iteration:   0%|          | 0/2444 [00:00<?, ?it/s]Train iteration:   0%|          | 0/2444 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 324, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 132, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 269, in run_with_given_seed
+    train_loss = train(model, device, train_loader, optimizer, multicls_criterion)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 38, in train
+    for step, (bg, labels) in enumerate(tqdm(loader, desc="Train iteration")):
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/tqdm/std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1333, in _next_data
+    return self._process_data(data)
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1359, in _process_data
+    data.reraise()
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/_utils.py", line 543, in reraise
+    raise exception
+IndexError: Caught IndexError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/dgl/data/utils.py", line 345, in __getitem__
+    return self.dataset[self.indices[item]]
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/ogb/graphproppred/dataset_dgl.py", line 191, in __getitem__
+    return self.graphs[idx], self.labels[idx]
+IndexError: list index out of range
+

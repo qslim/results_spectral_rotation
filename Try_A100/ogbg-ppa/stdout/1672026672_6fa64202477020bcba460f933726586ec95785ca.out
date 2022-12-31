@@ -1,0 +1,19 @@
+NVIDIA A100-SXM4-40GB 7
+{'dataset_name': 'ogbg-ppa', 'basis': 'GSO', 'epsilon': [-0.1, -0.3], 'power': [[1, 4], [2, 4]], 'degs': [0.1, 0.3, 0.5], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 32, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.7, 'milestones': [20, 40, 60], 'weight_decay': 0.0005, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'S', 'dropout': 0.5}, 'commit_id': '6fa64202477020bcba460f933726586ec95785ca', 'time_stamp': '1672026672', 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/'}
+{'dataset_name': 'ogbg-ppa', 'basis': 'GSO', 'epsilon': [-0.1, -0.3], 'power': [[1, 4], [2, 4]], 'degs': [0.1, 0.3, 0.5], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 32, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.7, 'milestones': [20, 40, 60], 'weight_decay': 0.0005, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'S', 'dropout': 0.5}, 'commit_id': '6fa64202477020bcba460f933726586ec95785ca', 'time_stamp': 1672026676, 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/', 'seed': 0}
+Converting graphs into DGL objects...
+This will download 2.79GB. Will you proceed? (y/N)
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 313, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 123, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 178, in run_with_given_seed
+    dataset = DglGraphPropPred(name=config.dataset_name)
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/ogb/graphproppred/dataset_dgl.py", line 68, in __init__
+    self.pre_process()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/../../ogbg/mol/utils/data_preparation.py", line 52, in pre_process
+    if decide_download(url):
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/ogb/utils/url.py", line 17, in decide_download
+    return input("This will download %.2fGB. Will you proceed? (y/N)\n" % (size)).lower() == "y"
+EOFError: EOF when reading a line
