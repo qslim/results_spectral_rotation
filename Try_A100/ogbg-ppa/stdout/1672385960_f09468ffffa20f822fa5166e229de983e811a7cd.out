@@ -1,26 +1,0 @@
-NVIDIA A100-SXM4-40GB 1
-{'dataset_name': 'ogbg-ppa', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 8, 'hyperparams': {'batch_size': 16, 'epochs': 1201, 'learning_rate': 0.001, 'step_size': 35, 'decay_rate': 0.65, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.5, 'exp_n': 3}, 'commit_id': 'f09468ffffa20f822fa5166e229de983e811a7cd', 'time_stamp': '1672385960', 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/'}
-{'dataset_name': 'ogbg-ppa', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 8, 'hyperparams': {'batch_size': 16, 'epochs': 1201, 'learning_rate': 0.001, 'step_size': 35, 'decay_rate': 0.65, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.5, 'exp_n': 3}, 'commit_id': 'f09468ffffa20f822fa5166e229de983e811a7cd', 'time_stamp': 1672385964, 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/', 'seed': 0}
-Loading the cached file... (NOTE: delete it if you change the preprocessing settings)
-Bases total: 22
-#Params: 10861477
-Epoch 1 training...
-Train iteration:   0%|          | 0/4888 [00:00<?, ?it/s]Train iteration:   0%|          | 0/4888 [00:20<?, ?it/s]
-Traceback (most recent call last):
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 326, in <module>
-    main()
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 131, in main
-    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 271, in run_with_given_seed
-    train_loss = train(model, device, train_loader, optimizer, multicls_criterion)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 46, in train
-    pred = model(bg, x, edge_attr, bases)
-  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/model.py", line 52, in forward
-    x = self.emb_jk(x)
-  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/../../utils/jumping_knowledge.py", line 14, in forward
-    assert isinstance(xs, list) or isinstance(xs, tuple)
-AssertionError

@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 19, in <module>
-    from model import Net
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/model.py", line 39
-    nn..Tanh(),
-       ^
-SyntaxError: invalid syntax

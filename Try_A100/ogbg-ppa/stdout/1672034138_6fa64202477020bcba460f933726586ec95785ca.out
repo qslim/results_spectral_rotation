@@ -1,4 +1,0 @@
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 204
-    test_loader = DataLoader(dataset[torch.tensor([i for i in range(9000, 10000)])], batch_size=config.hyperparams.batch_size, shuffle=False,
-    ^
-SyntaxError: invalid syntax

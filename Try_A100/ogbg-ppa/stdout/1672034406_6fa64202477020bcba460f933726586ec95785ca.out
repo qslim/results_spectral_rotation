@@ -1,26 +1,0 @@
-NVIDIA A100-SXM4-40GB 6
-{'dataset_name': 'ogbg-ppa', 'basis': 'GSO', 'epsilon': [0], 'power': [1], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 32, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.7, 'milestones': [20, 40, 60], 'weight_decay': 0.0005, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'S', 'dropout': 0.5}, 'commit_id': '6fa64202477020bcba460f933726586ec95785ca', 'time_stamp': '1672034406', 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/'}
-{'dataset_name': 'ogbg-ppa', 'basis': 'GSO', 'epsilon': [0], 'power': [1], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 32, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.7, 'milestones': [20, 40, 60], 'weight_decay': 0.0005, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 256, 'pooling': 'S', 'dropout': 0.5}, 'commit_id': '6fa64202477020bcba460f933726586ec95785ca', 'time_stamp': 1672034410, 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/', 'seed': 0}
-Loading the cached file... (NOTE: delete it if you change the preprocessing settings)
-Bases total: 2
-#Params: 872997
-Epoch 1 training...
-Train iteration:   0%|          | 0/250 [00:00<?, ?it/s]Train iteration:   0%|          | 0/250 [00:07<?, ?it/s]
-Traceback (most recent call last):
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 325, in <module>
-    main()
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 132, in main
-    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 270, in run_with_given_seed
-    train_loss = train(model, device, train_loader, optimizer, multicls_criterion)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 48, in train
-    pred = model(bg, x, edge_attr, bases)
-  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/model.py", line 49, in forward
-    x = conv(g, x, edge_attr, bases)
-  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
-    return forward_call(*input, **kwargs)
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/model.py", line 81, in forward
-    xee = self.pre_ffn(graph.edata['_x'] + edge_attr) * bases
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.06 GiB (GPU 0; 39.41 GiB total capacity; 35.81 GiB already allocated; 314.56 MiB free; 37.77 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

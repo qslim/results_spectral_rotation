@@ -1,8 +1,0 @@
-NVIDIA A100-SXM4-40GB 1
-{'dataset_name': 'ogbg-ppa', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 8, 'hyperparams': {'batch_size': 16, 'epochs': 1201, 'learning_rate': 0.001, 'step_size': 35, 'decay_rate': 0.65, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.5, 'exp_n': 3}, 'commit_id': 'f09468ffffa20f822fa5166e229de983e811a7cd', 'time_stamp': '1672385871', 'directory': '../../../results_spectral_rotation/A100/ogbg-ppa/'}
-Traceback (most recent call last):
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 327, in <module>
-    main()
-  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/ogbg/ppa/./main.py", line 110, in main
-    + str(config.hyperparams.milestones) \
-AttributeError: 'EasyDict' object has no attribute 'milestones'
