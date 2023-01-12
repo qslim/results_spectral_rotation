@@ -1,0 +1,19 @@
+NVIDIA A100-SXM4-40GB 1
+{'dataset_name': 'ZINC', 'basis': 'SPA', 'edgehop': 2, 'epsilon': [-0.1, -0.2, -0.3, -0.4, -0.5], 'power': [[4, 4], [4, 4], [4, 4], [4, 4], [4, 4]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': 'afed78f430a6d5d3e22bbe945ce67b0e1738769b', 'time_stamp': '1673511359', 'directory': '../../../results_spectral_rotation/A100/ZINC/'}
+{'dataset_name': 'ZINC', 'basis': 'SPA', 'edgehop': 2, 'epsilon': [-0.1, -0.2, -0.3, -0.4, -0.5], 'power': [[4, 4], [4, 4], [4, 4], [4, 4], [4, 4]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': 'afed78f430a6d5d3e22bbe945ce67b0e1738769b', 'time_stamp': 1673511361, 'directory': '../../../results_spectral_rotation/A100/ZINC/', 'seed': 0}
+Basis configurations: basis: SPA, epsilon: [-0.1, -0.2, -0.3, -0.4, -0.5], power: [[4, 4], [4, 4], [4, 4], [4, 4], [4, 4]], degs: []
+Generating 10000 graphs for the TRAIN set...
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/b/graphml/zinc/./main.py", line 304, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/b/graphml/zinc/./main.py", line 114, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/b/graphml/zinc/./main.py", line 165, in run_with_given_seed
+    dataset = MoleculeDataset(name=config.dataset_name, config=config)
+  File "/home/mingqi/workspace/spectral_rotation/b/graphml/zinc/data_preparation.py", line 228, in __init__
+    self.train = MoleculeDGL(data_dir, 'train', num_graphs=10000, basis=basis, epsilon=epsilon, power=power,
+  File "/home/mingqi/workspace/spectral_rotation/b/graphml/zinc/data_preparation.py", line 37, in __init__
+    self._prepare()
+  File "/home/mingqi/workspace/spectral_rotation/b/graphml/zinc/data_preparation.py", line 51, in _prepare
+    with open(self.data_dir + "/%s.pickle" % self.split, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './data/molecules/train.pickle'
