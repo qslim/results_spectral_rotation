@@ -1,0 +1,18 @@
+NVIDIA A100-SXM4-40GB 7
+{'dataset_name': 'ogbg-ppa', 'resume_train': 'ckpt/5550c7a_1673165845_ogbg-ppacurr.tar', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, [1, 2], [1, 2], [1, 2], [1, 2], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0, 1, 2, 3, 4], 'num_workers': 8, 'hyperparams': {'batch_size': 32, 'epochs': 551, 'learning_rate': 0.001, 'decay_rate': 0.65, 'step_size': 30, 'warmup_epochs': 0}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.3, 'exp_n': 1}, 'commit_id': 'c864a4303188db4307b7159960604a7948594d9e', 'time_stamp': '1673695533', 'directory': '../../../../results_spectral_rotation/Try_A100/ogbg-ppa/'}
+{'dataset_name': 'ogbg-ppa', 'resume_train': 'ckpt/5550c7a_1673165845_ogbg-ppacurr.tar', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, [1, 2], [1, 2], [1, 2], [1, 2], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0, 1, 2, 3, 4], 'num_workers': 8, 'hyperparams': {'batch_size': 32, 'epochs': 551, 'learning_rate': 0.001, 'decay_rate': 0.65, 'step_size': 30, 'warmup_epochs': 0}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.3, 'exp_n': 1}, 'commit_id': 'c864a4303188db4307b7159960604a7948594d9e', 'time_stamp': 1673695536, 'directory': '../../../../results_spectral_rotation/Try_A100/ogbg-ppa/', 'seed': 0}
+Loading the cached file... (NOTE: delete it if you change the preprocessing settings)
+Bases total: 22
+#Params: 2003365
+Loading model from ckpt/5550c7a_1673165845_ogbg-ppacurr.tar... Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 330, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 135, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 237, in run_with_given_seed
+    model.load_state_dict(checkpoint['model_state_dict'])
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1667, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for Net:
+	Unexpected key(s) in state_dict: "convs.4.pre_ffn.0.weight", "convs.4.pre_ffn.0.bias", "convs.4.ffn.0.weight", "convs.4.ffn.0.bias", "convs.4.ffn.2.weight", "convs.4.ffn.2.bias", "convs.4.ffn.4.weight", "convs.4.ffn.4.bias", "convs.4.ffn.4.running_mean", "convs.4.ffn.4.running_var", "convs.4.ffn.4.num_batches_tracked", "convs.4.edge_encoder.weight", "convs.4.edge_encoder.bias". 
+	size mismatch for graph_pred_linear.weight: copying a param with shape torch.Size([37, 1920]) from checkpoint, the shape in current model is torch.Size([37, 1536]).

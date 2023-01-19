@@ -1,0 +1,25 @@
+NVIDIA A100-SXM4-40GB 7
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': 'ckpt', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, [1, 2], [1, 2], [1, 2], [1, 2], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0, 1, 2, 3, 4], 'num_workers': 8, 'cov_weight': 0.005, 'hyperparams': {'batch_size': 16, 'epochs': 551, 'learning_rate': 0.001, 'decay_rate': 0.65, 'step_size': 30, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.5, 'exp_n': 2}, 'commit_id': '46ad55413459a72cea97aba054533fecbb9057a7', 'time_stamp': '1673936933', 'directory': '../../../../results_spectral_rotation/Try_A100/ogbg-ppa/'}
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': 'ckpt', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, [1, 2], [1, 2], [1, 2], [1, 2], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0, 1, 2, 3, 4], 'num_workers': 8, 'cov_weight': 0.005, 'hyperparams': {'batch_size': 16, 'epochs': 551, 'learning_rate': 0.001, 'decay_rate': 0.65, 'step_size': 30, 'warmup_epochs': 5}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.5, 'exp_n': 2}, 'commit_id': '46ad55413459a72cea97aba054533fecbb9057a7', 'time_stamp': 1673936935, 'directory': '../../../../results_spectral_rotation/Try_A100/ogbg-ppa/', 'seed': 0}
+Loading the cached file... (NOTE: delete it if you change the preprocessing settings)
+Bases total: 22
+#Params: 6589861
+Cov_weight: 0.005
+Epoch 1 training...
+Train iteration:   0%|          | 0/4888 [00:00<?, ?it/s]Train iteration:   0%|          | 0/4888 [00:18<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 341, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 142, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 284, in run_with_given_seed
+    train_loss, train_cov = train(model, device, train_loader, optimizer, multicls_criterion, weight=weight)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 48, in train
+    pred, xtx = model(bg, x, edge_attr, bases)
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1190, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/model.py", line 57, in forward
+    x = F.dropout(x, p=self.dropout, training=self.training)
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1265, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'Net' object has no attribute 'dropout'
