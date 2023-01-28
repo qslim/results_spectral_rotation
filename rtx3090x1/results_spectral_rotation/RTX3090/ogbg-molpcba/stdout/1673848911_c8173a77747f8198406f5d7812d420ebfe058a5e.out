@@ -1,0 +1,35 @@
+NVIDIA GeForce RTX 3090 0
+{'dataset_name': 'ogbg-molpcba', 'basis': 'GSO', 'epsilon': [-0.1, -0.2, -0.3, -0.4], 'power': [[1, 4], [1, 4], [1, 7], [1, 7]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.2, 'milestones': [10, 15, 20], 'weight_decay': 0.0005, 'warmup_epochs': 0}, 'architecture': {'layers': 8, 'hidden': 256, 'pooling': 'X', 'dropout': 0}, 'commit_id': 'c8173a77747f8198406f5d7812d420ebfe058a5e', 'time_stamp': '1673848911', 'directory': '../../../results_spectral_rotation/RTX3090/ogbg-molpcba/'}
+{'dataset_name': 'ogbg-molpcba', 'basis': 'GSO', 'epsilon': [-0.1, -0.2, -0.3, -0.4], 'power': [[1, 4], [1, 4], [1, 7], [1, 7]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 30, 'learning_rate': 0.0005, 'decay_rate': 0.2, 'milestones': [10, 15, 20], 'weight_decay': 0.0005, 'warmup_epochs': 0}, 'architecture': {'layers': 8, 'hidden': 256, 'pooling': 'X', 'dropout': 0}, 'commit_id': 'c8173a77747f8198406f5d7812d420ebfe058a5e', 'time_stamp': 1673848913, 'directory': '../../../results_spectral_rotation/RTX3090/ogbg-molpcba/', 'seed': 0}
+Loading the cached file... (NOTE: delete it if you change the preprocessing settings)
+Traceback (most recent call last):
+  File "/home/rtx/workspace/spectral_rotation/ogbg/graphml/ogbg/mol/./main.py", line 312, in <module>
+    main()
+  File "/home/rtx/workspace/spectral_rotation/ogbg/graphml/ogbg/mol/./main.py", line 119, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/rtx/workspace/spectral_rotation/ogbg/graphml/ogbg/mol/./main.py", line 174, in run_with_given_seed
+    dataset = DglGraphPropPred(name=config.dataset_name)
+  File "/home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/ogb/graphproppred/dataset_dgl.py", line 68, in __init__
+    self.pre_process()
+  File "/home/rtx/workspace/spectral_rotation/ogbg/graphml/ogbg/mol/../../ogbg/data_preparation.py", line 35, in pre_process
+    self.graphs, label_dict = load_graphs(pre_processed_file_path)
+  File "/home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/data/graph_serialize.py", line 182, in load_graphs
+    return load_graph_v2(filename, idx_list)
+  File "/home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/data/graph_serialize.py", line 192, in load_graph_v2
+    heterograph_list = _CAPI_LoadGraphFiles_V2(filename, idx_list)
+  File "dgl/_ffi/_cython/./function.pxi", line 293, in dgl._ffi._cy3.core.FunctionBase.__call__
+  File "dgl/_ffi/_cython/./function.pxi", line 225, in dgl._ffi._cy3.core.FuncCall
+  File "dgl/_ffi/_cython/./function.pxi", line 215, in dgl._ffi._cy3.core.FuncCall3
+dgl._ffi.base.DGLError: [14:02:05] /opt/dgl/src/graph/heterograph.cc:523: Check failed: fs->Read(&magicNum): Invalid Magic Number
+Stack trace:
+  [bt] (0) /home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/libdgl.so(dmlc::LogMessageFatal::~LogMessageFatal()+0x4f) [0x7fb84a844e6f]
+  [bt] (1) /home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/libdgl.so(dgl::HeteroGraph::Load(dmlc::Stream*)+0x91) [0x7fb84abde321]
+  [bt] (2) /home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/libdgl.so(dgl::serialize::LoadHeteroGraphs(std::string const&, std::vector<unsigned long, std::allocator<unsigned long> >)+0x1395) [0x7fb84ac75c75]
+  [bt] (3) /home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/libdgl.so(+0x739f6f) [0x7fb84ac6df6f]
+  [bt] (4) /home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/libdgl.so(DGLFuncCall+0x48) [0x7fb84ab6d358]
+  [bt] (5) /home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/_ffi/_cy3/core.cpython-39-x86_64-linux-gnu.so(+0x16dd3) [0x7fb87ada1dd3]
+  [bt] (6) /home/rtx/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/dgl/_ffi/_cy3/core.cpython-39-x86_64-linux-gnu.so(+0x172ab) [0x7fb87ada22ab]
+  [bt] (7) python(_PyObject_MakeTpCall+0x2df) [0x55bf79ceacaf]
+  [bt] (8) python(_PyEval_EvalFrameDefault+0x42a) [0x55bf79d8480a]
+
+
