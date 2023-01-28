@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/b812/ymq/workspace/graphml/ogbg/mol/./main.py", line 10, in <module>
+    from ogb.graphproppred import Evaluator, collate_dgl
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/ogb/graphproppred/__init__.py", line 5, in <module>
+    from .dataset_pyg import PygGraphPropPredDataset
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/ogb/graphproppred/dataset_pyg.py", line 6, in <module>
+    from torch_geometric.data import InMemoryDataset
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/torch_geometric/__init__.py", line 4, in <module>
+    import torch_geometric.data
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/torch_geometric/data/__init__.py", line 1, in <module>
+    from .data import Data
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/torch_geometric/data/data.py", line 9, in <module>
+    from torch_sparse import SparseTensor
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/torch_sparse/__init__.py", line 33, in <module>
+    raise RuntimeError(
+RuntimeError: Detected that PyTorch and torch_sparse were compiled with different CUDA versions. PyTorch has CUDA version 11.3 and torch_sparse has CUDA version 9.1. Please reinstall the torch_sparse that matches your PyTorch install.

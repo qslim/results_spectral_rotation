@@ -1,0 +1,14 @@
+DGL backend not selected or invalid.  Assuming PyTorch for now.
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+Traceback (most recent call last):
+  File "/home/b812/ymq/workspace/graphml/ogbg/mol/./main.py", line 312, in <module>
+    main()
+  File "/home/b812/ymq/workspace/graphml/ogbg/mol/./main.py", line 83, in main
+    print(torch.cuda.get_device_name(0), cuda_id)
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/torch/cuda/__init__.py", line 328, in get_device_name
+    return get_device_properties(device).name
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/torch/cuda/__init__.py", line 358, in get_device_properties
+    _lazy_init()  # will define _get_device_properties
+  File "/home/feifan/anaconda3/envs/latest_env_for_spectrum/lib/python3.9/site-packages/torch/cuda/__init__.py", line 216, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: No CUDA GPUs are available
