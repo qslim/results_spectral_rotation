@@ -1,0 +1,9 @@
+NVIDIA A100-SXM4-40GB 1
+{'dataset_name': 'MNIST', 'basis': 'DEN', 'edgehop': 1, 'epsilon': [-0.2, -0.25, -0.3, -0.35], 'power': [[1, 2], [1, 2], [1, 2], [1, 2]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '9afab1b0b07f4a59bd773de75083f32a2febe226', 'time_stamp': '1674915533', 'directory': '../../../results_spectral_rotation/Try_A100/MNIST/'}
+{'dataset_name': 'MNIST', 'basis': 'DEN', 'edgehop': 1, 'epsilon': [-0.2, -0.25, -0.3, -0.35], 'power': [[1, 2], [1, 2], [1, 2], [1, 2]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '9afab1b0b07f4a59bd773de75083f32a2febe226', 'time_stamp': 1674915534, 'directory': '../../../results_spectral_rotation/Try_A100/MNIST/', 'seed': 0}
+Adj matrix defined from super-pixel locations (only)
+Basis configurations: basis: DEN, epsilon: [-0.2, -0.25, -0.3, -0.35], power: [[1, 2], [1, 2], [1, 2], [1, 2]], degs: []
+preparing 10000 graphs for the TEST set...
+/home/mingqi/anaconda3/envs/pytorch/lib/python3.9/site-packages/dgl/heterograph.py:72: DGLWarning: Recommend creating graphs by `dgl.graph(data)` instead of `dgl.DGLGraph(data)`.
+  dgl_warning('Recommend creating graphs by `dgl.graph(data)`'
+preparing 60000 graphs for the TRAIN set...

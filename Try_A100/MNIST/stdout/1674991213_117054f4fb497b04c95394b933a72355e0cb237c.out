@@ -1,0 +1,17 @@
+NVIDIA A100-SXM4-40GB 2
+{'dataset_name': 'MNIST', 'basis': 'SPA', 'edgehop': 1, 'epsilon': [-0.3], 'power': [[1, 1]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '117054f4fb497b04c95394b933a72355e0cb237c', 'time_stamp': '1674991213', 'directory': '../../../results_spectral_rotation/Try_A100/MNIST/'}
+{'dataset_name': 'MNIST', 'basis': 'SPA', 'edgehop': 1, 'epsilon': [-0.3], 'power': [[1, 1]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '117054f4fb497b04c95394b933a72355e0cb237c', 'time_stamp': 1674991215, 'directory': '../../../results_spectral_rotation/Try_A100/MNIST/', 'seed': 0}
+Adj matrix defined from super-pixel locations (only)
+Basis configurations: basis: SPA, epsilon: [-0.3], power: [[1, 1]], degs: []
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/superpixels/graphml/superpixels/./main.py", line 309, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/superpixels/graphml/superpixels/./main.py", line 117, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/superpixels/graphml/superpixels/./main.py", line 168, in run_with_given_seed
+    dataset = SuperPixDatasetDGL(name=config.dataset_name, config=config)
+  File "/home/mingqi/workspace/spectral_rotation/superpixels/graphml/superpixels/data_preparation.py", line 250, in __init__
+    self.test = SuperPixDGL("./data/superpixels", dataset=self.name, split='test',
+  File "/home/mingqi/workspace/spectral_rotation/superpixels/graphml/superpixels/data_preparation.py", line 98, in __init__
+    self.n_samples = len(self.labels)
+AttributeError: 'SuperPixDGL' object has no attribute 'labels'

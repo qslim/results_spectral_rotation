@@ -1,0 +1,68 @@
+NVIDIA A100-SXM4-40GB 2
+{'dataset_name': 'MNIST', 'basis': 'SPA', 'edgehop': 1, 'epsilon': [-0.3], 'power': [[1, 1]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '452974830bbd1148353ebd829ce8a1cee546a06f', 'time_stamp': '1674991663', 'directory': '../../../results_spectral_rotation/Try_A100/MNIST/'}
+{'dataset_name': 'MNIST', 'basis': 'SPA', 'edgehop': 1, 'epsilon': [-0.3], 'power': [[1, 1]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '452974830bbd1148353ebd829ce8a1cee546a06f', 'time_stamp': 1674991665, 'directory': '../../../results_spectral_rotation/Try_A100/MNIST/', 'seed': 0}
+Adj matrix defined from super-pixel locations (only)
+Basis configurations: basis: SPA, epsilon: [-0.3], power: [[1, 1]], degs: []
+Loading the cached file for the TEST set... (NOTE: delete it if you change the preprocessing settings)
+Loading the cached file for the TRAIN set... (NOTE: delete it if you change the preprocessing settings)
+[I] Data load time: 0.6429s
+Bases total: 2
+#Params: 496330
+Epoch 1 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:01<00:52,  1.26s/it]Train iteration:  14%|█▍        | 6/43 [00:01<00:06,  5.78it/s]Train iteration:  28%|██▊       | 12/43 [00:01<00:02, 12.38it/s]Train iteration:  42%|████▏     | 18/43 [00:01<00:01, 19.00it/s]Train iteration:  56%|█████▌    | 24/43 [00:01<00:00, 25.28it/s]Train iteration:  70%|██████▉   | 30/43 [00:01<00:00, 30.94it/s]Train iteration:  81%|████████▏ | 35/43 [00:01<00:00, 34.91it/s]Train iteration:  93%|█████████▎| 40/43 [00:02<00:00, 38.22it/s]Train iteration: 100%|██████████| 43/43 [00:02<00:00, 19.94it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:12,  3.29it/s]Eval iteration:  37%|███▋      | 16/43 [00:00<00:00, 49.52it/s]Eval iteration:  70%|██████▉   | 30/43 [00:00<00:00, 76.31it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 91.42it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 61.99it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:01,  2.93it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00,  8.96it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:02,  2.88it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 16.65it/s]
+Train: 0.11090909090909092 Validation: 0.136 Test: 0.134 Train loss: 2.4232314852781074 lr: 8e-06
+Epoch 2 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:00<00:14,  2.89it/s]Train iteration:  14%|█▍        | 6/43 [00:00<00:02, 16.49it/s]Train iteration:  28%|██▊       | 12/43 [00:00<00:01, 27.82it/s]Train iteration:  40%|███▉      | 17/43 [00:00<00:00, 33.95it/s]Train iteration:  53%|█████▎    | 23/43 [00:00<00:00, 39.36it/s]Train iteration:  65%|██████▌   | 28/43 [00:00<00:00, 42.31it/s]Train iteration:  77%|███████▋  | 33/43 [00:00<00:00, 44.39it/s]Train iteration:  91%|█████████ | 39/43 [00:01<00:00, 46.72it/s]Train iteration: 100%|██████████| 43/43 [00:01<00:00, 33.90it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:12,  3.44it/s]Eval iteration:  26%|██▌       | 11/43 [00:00<00:00, 35.05it/s]Eval iteration:  53%|█████▎    | 23/43 [00:00<00:00, 60.13it/s]Eval iteration:  79%|███████▉  | 34/43 [00:00<00:00, 74.91it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 56.03it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:00,  3.48it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00, 10.49it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:01,  3.50it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 19.19it/s]
+Train: 0.4058181818181818 Validation: 0.42 Test: 0.39 Train loss: 2.0700601062109305 lr: 6.4e-05
+Epoch 3 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:00<00:13,  3.09it/s]Train iteration:  16%|█▋        | 7/43 [00:00<00:01, 19.52it/s]Train iteration:  30%|███       | 13/43 [00:00<00:01, 29.90it/s]Train iteration:  42%|████▏     | 18/43 [00:00<00:00, 34.88it/s]Train iteration:  53%|█████▎    | 23/43 [00:00<00:00, 38.28it/s]Train iteration:  67%|██████▋   | 29/43 [00:00<00:00, 42.30it/s]Train iteration:  81%|████████▏ | 35/43 [00:01<00:00, 44.92it/s]Train iteration:  95%|█████████▌| 41/43 [00:01<00:00, 46.79it/s]Train iteration: 100%|██████████| 43/43 [00:01<00:00, 34.36it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:14,  2.90it/s]Eval iteration:  35%|███▍      | 15/43 [00:00<00:00, 42.26it/s]Eval iteration:  67%|██████▋   | 29/43 [00:00<00:00, 69.63it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 89.50it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 57.82it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:00,  3.53it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00, 10.75it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:02,  3.36it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 18.62it/s]
+Train: 0.5229090909090909 Validation: 0.496 Test: 0.444 Train loss: 1.5298109692196513 lr: 0.000216
+Epoch 4 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:00<00:12,  3.36it/s]Train iteration:  16%|█▋        | 7/43 [00:00<00:01, 20.57it/s]Train iteration:  28%|██▊       | 12/43 [00:00<00:01, 29.23it/s]Train iteration:  42%|████▏     | 18/43 [00:00<00:00, 36.40it/s]Train iteration:  56%|█████▌    | 24/43 [00:00<00:00, 41.11it/s]Train iteration:  67%|██████▋   | 29/43 [00:00<00:00, 43.59it/s]Train iteration:  81%|████████▏ | 35/43 [00:00<00:00, 45.82it/s]Train iteration:  95%|█████████▌| 41/43 [00:01<00:00, 47.59it/s]Train iteration: 100%|██████████| 43/43 [00:01<00:00, 35.28it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:12,  3.26it/s]Eval iteration:  37%|███▋      | 16/43 [00:00<00:00, 48.88it/s]Eval iteration:  70%|██████▉   | 30/43 [00:00<00:00, 75.65it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 91.44it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 61.53it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:00,  3.49it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00, 10.03it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:02,  3.44it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 19.05it/s]
+Train: 0.2570909090909091 Validation: 0.268 Test: 0.242 Train loss: 0.935044391210689 lr: 0.000512
+Epoch 5 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:00<00:11,  3.54it/s]Train iteration:  14%|█▍        | 6/43 [00:00<00:01, 19.15it/s]Train iteration:  28%|██▊       | 12/43 [00:00<00:01, 30.80it/s]Train iteration:  42%|████▏     | 18/43 [00:00<00:00, 37.54it/s]Train iteration:  53%|█████▎    | 23/43 [00:00<00:00, 41.17it/s]Train iteration:  67%|██████▋   | 29/43 [00:00<00:00, 44.28it/s]Train iteration:  81%|████████▏ | 35/43 [00:00<00:00, 46.19it/s]Train iteration:  95%|█████████▌| 41/43 [00:01<00:00, 48.11it/s]Train iteration: 100%|██████████| 43/43 [00:01<00:00, 36.03it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:12,  3.46it/s]Eval iteration:  33%|███▎      | 14/43 [00:00<00:00, 45.03it/s]Eval iteration:  63%|██████▎   | 27/43 [00:00<00:00, 72.01it/s]Eval iteration:  95%|█████████▌| 41/43 [00:00<00:00, 91.69it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 61.83it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:00,  3.55it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00, 10.31it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:01,  3.64it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 20.03it/s]
+Train: 0.20981818181818182 Validation: 0.188 Test: 0.214 Train loss: 0.7425057368223057 lr: 0.001
+Epoch 6 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:00<00:13,  3.03it/s]Train iteration:  14%|█▍        | 6/43 [00:00<00:02, 17.21it/s]Train iteration:  28%|██▊       | 12/43 [00:00<00:01, 28.66it/s]Train iteration:  42%|████▏     | 18/43 [00:00<00:00, 35.97it/s]Train iteration:  56%|█████▌    | 24/43 [00:00<00:00, 40.58it/s]Train iteration:  67%|██████▋   | 29/43 [00:00<00:00, 43.05it/s]Train iteration:  81%|████████▏ | 35/43 [00:01<00:00, 45.47it/s]Train iteration:  93%|█████████▎| 40/43 [00:01<00:00, 46.43it/s]Train iteration: 100%|██████████| 43/43 [00:01<00:00, 34.45it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:12,  3.34it/s]Eval iteration:  37%|███▋      | 16/43 [00:00<00:00, 49.91it/s]Eval iteration:  70%|██████▉   | 30/43 [00:00<00:00, 76.60it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 62.79it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:00,  3.33it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00,  9.92it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:02,  3.45it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 19.32it/s]
+Train: 0.6872727272727273 Validation: 0.692 Test: 0.624 Train loss: 0.5402368535829145 lr: 0.001
+Epoch 7 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:00<00:13,  3.02it/s]Train iteration:  14%|█▍        | 6/43 [00:00<00:02, 17.17it/s]Train iteration:  28%|██▊       | 12/43 [00:00<00:01, 28.68it/s]Train iteration:  42%|████▏     | 18/43 [00:00<00:00, 35.79it/s]Train iteration:  56%|█████▌    | 24/43 [00:00<00:00, 40.30it/s]Train iteration:  70%|██████▉   | 30/43 [00:00<00:00, 43.46it/s]Train iteration:  84%|████████▎ | 36/43 [00:01<00:00, 45.50it/s]Train iteration:  98%|█████████▊| 42/43 [00:01<00:00, 47.45it/s]Train iteration: 100%|██████████| 43/43 [00:01<00:00, 34.58it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:11,  3.60it/s]Eval iteration:  33%|███▎      | 14/43 [00:00<00:00, 45.43it/s]Eval iteration:  65%|██████▌   | 28/43 [00:00<00:00, 74.26it/s]Eval iteration:  98%|█████████▊| 42/43 [00:00<00:00, 93.37it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 62.53it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:00,  3.37it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00, 10.13it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:02,  3.27it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 18.60it/s]
+Train: 0.5592727272727273 Validation: 0.544 Test: 0.536 Train loss: 0.45907652932544085 lr: 0.001
+Epoch 8 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]Train iteration:   2%|▏         | 1/43 [00:00<00:12,  3.32it/s]Train iteration:  14%|█▍        | 6/43 [00:00<00:02, 18.29it/s]Train iteration:  28%|██▊       | 12/43 [00:00<00:01, 29.96it/s]Train iteration:  40%|███▉      | 17/43 [00:00<00:00, 35.77it/s]Train iteration:  53%|█████▎    | 23/43 [00:00<00:00, 40.58it/s]Train iteration:  67%|██████▋   | 29/43 [00:00<00:00, 43.70it/s]Train iteration:  79%|███████▉  | 34/43 [00:00<00:00, 45.35it/s]Train iteration:  93%|█████████▎| 40/43 [00:01<00:00, 47.08it/s]Train iteration: 100%|██████████| 43/43 [00:01<00:00, 35.21it/s]
+Evaluating...
+Eval iteration:   0%|          | 0/43 [00:00<?, ?it/s]Eval iteration:   2%|▏         | 1/43 [00:00<00:12,  3.35it/s]Eval iteration:  33%|███▎      | 14/43 [00:00<00:00, 44.02it/s]Eval iteration:  63%|██████▎   | 27/43 [00:00<00:00, 70.95it/s]Eval iteration:  95%|█████████▌| 41/43 [00:00<00:00, 90.83it/s]Eval iteration: 100%|██████████| 43/43 [00:00<00:00, 61.57it/s]
+Eval iteration:   0%|          | 0/4 [00:00<?, ?it/s]Eval iteration:  25%|██▌       | 1/4 [00:00<00:00,  3.75it/s]Eval iteration: 100%|██████████| 4/4 [00:00<00:00, 10.89it/s]
+Eval iteration:   0%|          | 0/8 [00:00<?, ?it/s]Eval iteration:  12%|█▎        | 1/8 [00:00<00:02,  3.39it/s]Eval iteration: 100%|██████████| 8/8 [00:00<00:00, 18.70it/s]
+Train: 0.8105454545454546 Validation: 0.828 Test: 0.774 Train loss: 0.385581181839455 lr: 0.001
+Epoch 9 training...
+Train iteration:   0%|          | 0/43 [00:00<?, ?it/s]
