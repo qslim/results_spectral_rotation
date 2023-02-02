@@ -1,0 +1,11 @@
+{'dataset_name': 'PTC_MR', 'basis': 'GSO', 'epsilon': [-0.3, -0.35, -0.4], 'power': [[1, 8], [1, 8], [1, 8]], 'seeds': [0], 'num_folds': 10, 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 151, 'learning_rate': 0.001, 'step_size': 30, 'decay_rate': 0.65}, 'architecture': {'nonlinear': 'GELU', 'layers': 6, 'hidden': 128, 'pooling': 'X', 'dropout': 0}, 'commit_id': '5550c7a449f3b4116970d9d7caeb5ab686e3e08f', 'time_stamp': '1672755685', 'directory': '../../../../results_spectral_rotation/Try_A100/tu/PTC_MR/board/'}
+{'dataset_name': 'PTC_MR', 'basis': 'GSO', 'epsilon': [-0.3, -0.35, -0.4], 'power': [[1, 8], [1, 8], [1, 8]], 'seeds': [0], 'num_folds': 10, 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 151, 'learning_rate': 0.001, 'step_size': 30, 'decay_rate': 0.65}, 'architecture': {'nonlinear': 'GELU', 'layers': 6, 'hidden': 128, 'pooling': 'X', 'dropout': 0}, 'commit_id': '5550c7a449f3b4116970d9d7caeb5ab686e3e08f', 'time_stamp': 1672755687, 'directory': '../../../../results_spectral_rotation/Try_A100/tu/PTC_MR/board/', 'seed': 0}
+Pre-process:   0%|          | 0/344 [00:00<?, ?it/s]Pre-process:   0%|          | 0/344 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/tu/./main.py", line 262, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/tu/./main.py", line 258, in main
+    run_model(config)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/tu/./main.py", line 171, in run_model
+    g.edata['bases'] = edge_softmax(g, g.edata['bases'])
+NameError: name 'edge_softmax' is not defined

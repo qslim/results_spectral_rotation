@@ -1,0 +1,14 @@
+{'dataset_name': 'PTC_MR', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, [1, 2], [1, 2], [1, 2], [1, 2], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0], 'num_folds': 10, 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 30, 'decay_rate': 0.65}, 'architecture': {'nonlinear': 'GELU', 'layers': 6, 'hidden': 128, 'pooling': 'X', 'dropout': 0}, 'commit_id': 'ec64e75a8232f48c03f99d3b12e6bb6fe2104cc6', 'time_stamp': '1672656912', 'directory': '../../../../results_spectral_rotation/Try_A100/tu/PTC_MR/board/'}
+{'dataset_name': 'PTC_MR', 'basis': 'SPA', 'epsilon': [0, -0.05, -0.1, -0.15, -0.2, -0.25, -0.3, -0.35, -0.4, -0.45, -0.5], 'power': [1, 1, 1, 1, [1, 2], [1, 2], [1, 2], [1, 2], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0], 'num_folds': 10, 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 30, 'decay_rate': 0.65}, 'architecture': {'nonlinear': 'GELU', 'layers': 6, 'hidden': 128, 'pooling': 'X', 'dropout': 0}, 'commit_id': 'ec64e75a8232f48c03f99d3b12e6bb6fe2104cc6', 'time_stamp': 1672656914, 'directory': '../../../../results_spectral_rotation/Try_A100/tu/PTC_MR/board/', 'seed': 0}
+Downloading ./dataset/PTC_MR.zip from https://www.chrsmrrs.com/graphkerneldatasets/PTC_MR.zip...
+Extracting file to ./dataset/PTC_MR
+No Node Attribute Data
+Pre-process:   0%|          | 0/344 [00:00<?, ?it/s]Pre-process:   0%|          | 0/344 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/tu/./main.py", line 260, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/tu/./main.py", line 256, in main
+    run_model(config)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg_a/graphml/tu/./main.py", line 169, in run_model
+    dataset.graph_lists[i] = basis_transform(g, basis=basis, epsilon=epsilon, power=power, identity=identity)
+TypeError: basis_transform() got an unexpected keyword argument 'identity'

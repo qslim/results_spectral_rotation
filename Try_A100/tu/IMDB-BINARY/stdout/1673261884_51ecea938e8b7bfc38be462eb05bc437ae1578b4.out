@@ -1,0 +1,21 @@
+{'dataset_name': 'IMDB-BINARY', 'basis': 'GSO', 'epsilon': [-0.2, -0.25, -0.3, -0.35, -0.4], 'power': [[1, 3], [1, 3], [1, 5], [1, 5], [1, 5]], 'seeds': [0], 'num_folds': 10, 'num_workers': 8, 'hyperparams': {'batch_size': 16, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 40, 'decay_rate': 0.6}, 'architecture': {'nonlinear': 'GELU', 'layers': 4, 'hidden': 256, 'pooling': 'X', 'dropout': 0, 'batch_norm': 'Y'}, 'commit_id': '51ecea938e8b7bfc38be462eb05bc437ae1578b4', 'time_stamp': '1673261884', 'directory': '../../../../results_spectral_rotation/Try_A100/tu/IMDB-BINARY/board/'}
+{'dataset_name': 'IMDB-BINARY', 'basis': 'GSO', 'epsilon': [-0.2, -0.25, -0.3, -0.35, -0.4], 'power': [[1, 3], [1, 3], [1, 5], [1, 5], [1, 5]], 'seeds': [0], 'num_folds': 10, 'num_workers': 8, 'hyperparams': {'batch_size': 16, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 40, 'decay_rate': 0.6}, 'architecture': {'nonlinear': 'GELU', 'layers': 4, 'hidden': 256, 'pooling': 'X', 'dropout': 0, 'batch_norm': 'Y'}, 'commit_id': '51ecea938e8b7bfc38be462eb05bc437ae1578b4', 'time_stamp': 1673261886, 'directory': '../../../../results_spectral_rotation/Try_A100/tu/IMDB-BINARY/board/', 'seed': 0}
+Pre-process:   0%|          | 0/1000 [00:00<?, ?it/s]Pre-process:   7%|▋         | 73/1000 [00:00<00:01, 729.50it/s]Pre-process:  15%|█▌        | 150/1000 [00:00<00:01, 752.61it/s]Pre-process:  23%|██▎       | 226/1000 [00:00<00:01, 753.13it/s]Pre-process:  30%|███       | 302/1000 [00:00<00:00, 736.21it/s]Pre-process:  38%|███▊      | 378/1000 [00:00<00:00, 743.43it/s]Pre-process:  45%|████▌     | 453/1000 [00:00<00:00, 726.65it/s]Pre-process:  53%|█████▎    | 530/1000 [00:00<00:00, 739.45it/s]Pre-process:  61%|██████    | 610/1000 [00:00<00:00, 756.32it/s]Pre-process:  69%|██████▊   | 686/1000 [00:00<00:00, 727.43it/s]Pre-process:  76%|███████▌  | 760/1000 [00:01<00:00, 730.40it/s]Pre-process:  84%|████████▎ | 836/1000 [00:01<00:00, 738.71it/s]Pre-process:  91%|█████████▏| 913/1000 [00:01<00:00, 746.02it/s]Pre-process:  99%|█████████▉| 989/1000 [00:01<00:00, 749.80it/s]Pre-process: 100%|██████████| 1000/1000 [00:01<00:00, 741.68it/s]
+Basis total: 22
+train_set : test_set = %d : %d 900 100
+-------- FOLD0 DATASET=IMDB-BINARY, COMMIT_ID=51ecea938e8b7bfc38be462eb05bc437ae1578b4
+With batch_norm.
+#Params: 935426
+Epoch: 001, Train Loss: 4.3688160, Train Acc: 0.5322222, Test Acc: 0.5500000
+Epoch: 002, Train Loss: 3.5301446, Train Acc: 0.5733333, Test Acc: 0.5800000
+Epoch: 003, Train Loss: 2.5097652, Train Acc: 0.6700000, Test Acc: 0.6600000
+Epoch: 004, Train Loss: 0.7430861, Train Acc: 0.6888889, Test Acc: 0.6900000
+Epoch: 005, Train Loss: 0.8431209, Train Acc: 0.6611111, Test Acc: 0.6500000
+Epoch: 006, Train Loss: 0.6520200, Train Acc: 0.7266667, Test Acc: 0.7100000
+Epoch: 007, Train Loss: 0.6307294, Train Acc: 0.6977778, Test Acc: 0.6700000
+Epoch: 008, Train Loss: 0.6230353, Train Acc: 0.7311111, Test Acc: 0.7000000
+Epoch: 009, Train Loss: 0.6003816, Train Acc: 0.6888889, Test Acc: 0.7400000
+Epoch: 010, Train Loss: 0.7923832, Train Acc: 0.6466667, Test Acc: 0.6500000
+Epoch: 011, Train Loss: 0.5367765, Train Acc: 0.7388889, Test Acc: 0.7400000
+Epoch: 012, Train Loss: 0.5560199, Train Acc: 0.7155556, Test Acc: 0.7200000
+Epoch: 013, Train Loss: 0.5988325, Train Acc: 0.6944444, Test Acc: 0.6700000

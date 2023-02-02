@@ -1,0 +1,91 @@
+{'dataset_name': 'COLLAB', 'basis': 'SPA', 'epsilon': [-0.3, -0.35], 'power': [[1, 2], [1, 2]], 'edgehop': 1, 'seeds': [0], 'num_folds': 10, 'num_workers': 8, 'hyperparams': {'batch_size': 32, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.6}, 'architecture': {'nonlinear': 'GELU', 'layers': 3, 'hidden': 256, 'pooling': 'S', 'dropout': 0, 'edge_softmax': 'N'}, 'commit_id': '62ffe4f61e26add52114c16e87be225fd79dad78', 'time_stamp': '1673353415', 'directory': '../../../../results_spectral_rotation/Try_A100/tu/COLLAB/board/'}
+{'dataset_name': 'COLLAB', 'basis': 'SPA', 'epsilon': [-0.3, -0.35], 'power': [[1, 2], [1, 2]], 'edgehop': 1, 'seeds': [0], 'num_folds': 10, 'num_workers': 8, 'hyperparams': {'batch_size': 32, 'epochs': 301, 'learning_rate': 0.001, 'step_size': 50, 'decay_rate': 0.6}, 'architecture': {'nonlinear': 'GELU', 'layers': 3, 'hidden': 256, 'pooling': 'S', 'dropout': 0, 'edge_softmax': 'N'}, 'commit_id': '62ffe4f61e26add52114c16e87be225fd79dad78', 'time_stamp': 1673353417, 'directory': '../../../../results_spectral_rotation/Try_A100/tu/COLLAB/board/', 'seed': 0}
+Pre-process:   0%|          | 0/5000 [00:00<?, ?it/s]Pre-process:   1%|▏         | 69/5000 [00:00<00:07, 680.24it/s]Pre-process:   3%|▎         | 138/5000 [00:00<00:07, 683.69it/s]Pre-process:   4%|▍         | 207/5000 [00:00<00:07, 636.04it/s]Pre-process:   6%|▌         | 279/5000 [00:00<00:07, 663.55it/s]Pre-process:   7%|▋         | 347/5000 [00:00<00:07, 664.33it/s]Pre-process:   8%|▊         | 414/5000 [00:00<00:07, 652.03it/s]Pre-process:  10%|▉         | 482/5000 [00:00<00:06, 660.65it/s]Pre-process:  11%|█         | 554/5000 [00:00<00:06, 675.98it/s]Pre-process:  12%|█▏        | 622/5000 [00:00<00:06, 672.88it/s]Pre-process:  14%|█▍        | 698/5000 [00:01<00:06, 697.53it/s]Pre-process:  15%|█▌        | 772/5000 [00:01<00:05, 709.84it/s]Pre-process:  17%|█▋        | 844/5000 [00:01<00:06, 664.54it/s]Pre-process:  18%|█▊        | 918/5000 [00:01<00:05, 685.99it/s]Pre-process:  20%|█▉        | 988/5000 [00:01<00:05, 680.08it/s]Pre-process:  21%|██        | 1057/5000 [00:01<00:05, 666.15it/s]Pre-process:  23%|██▎       | 1131/5000 [00:01<00:05, 686.21it/s]Pre-process:  24%|██▍       | 1202/5000 [00:01<00:05, 690.94it/s]Pre-process:  25%|██▌       | 1272/5000 [00:01<00:05, 673.02it/s]Pre-process:  27%|██▋       | 1343/5000 [00:01<00:05, 683.60it/s]Pre-process:  28%|██▊       | 1412/5000 [00:02<00:05, 675.49it/s]Pre-process:  30%|██▉       | 1482/5000 [00:02<00:05, 681.56it/s]Pre-process:  31%|███       | 1555/5000 [00:02<00:04, 693.23it/s]Pre-process:  33%|███▎      | 1626/5000 [00:02<00:04, 695.88it/s]Pre-process:  34%|███▍      | 1696/5000 [00:02<00:04, 683.39it/s]Pre-process:  35%|███▌      | 1767/5000 [00:02<00:04, 689.27it/s]Pre-process:  37%|███▋      | 1837/5000 [00:02<00:04, 692.15it/s]Pre-process:  38%|███▊      | 1907/5000 [00:02<00:04, 691.96it/s]Pre-process:  40%|███▉      | 1978/5000 [00:02<00:04, 694.61it/s]Pre-process:  41%|████      | 2049/5000 [00:03<00:04, 698.64it/s]Pre-process:  42%|████▏     | 2119/5000 [00:03<00:04, 675.59it/s]Pre-process:  44%|████▎     | 2187/5000 [00:03<00:04, 664.71it/s]Pre-process:  45%|████▌     | 2257/5000 [00:03<00:04, 671.85it/s]Pre-process:  46%|████▋     | 2325/5000 [00:03<00:03, 672.60it/s]Pre-process:  48%|████▊     | 2393/5000 [00:03<00:03, 674.74it/s]Pre-process:  49%|████▉     | 2461/5000 [00:03<00:03, 673.28it/s]Pre-process:  51%|█████     | 2529/5000 [00:03<00:03, 663.55it/s]Pre-process:  52%|█████▏    | 2601/5000 [00:03<00:03, 677.94it/s]Pre-process:  54%|█████▎    | 2683/5000 [00:03<00:03, 719.64it/s]Pre-process:  55%|█████▌    | 2761/5000 [00:04<00:03, 736.71it/s]Pre-process:  57%|█████▋    | 2845/5000 [00:04<00:02, 764.85it/s]Pre-process:  59%|█████▊    | 2927/5000 [00:04<00:02, 778.89it/s]Pre-process:  60%|██████    | 3005/5000 [00:04<00:02, 774.67it/s]Pre-process:  62%|██████▏   | 3085/5000 [00:04<00:02, 781.22it/s]Pre-process:  63%|██████▎   | 3165/5000 [00:04<00:02, 781.36it/s]Pre-process:  65%|██████▍   | 3246/5000 [00:04<00:02, 788.68it/s]Pre-process:  67%|██████▋   | 3326/5000 [00:04<00:02, 789.14it/s]Pre-process:  68%|██████▊   | 3405/5000 [00:04<00:02, 702.94it/s]Pre-process:  70%|██████▉   | 3478/5000 [00:05<00:03, 499.55it/s]Pre-process:  71%|███████   | 3538/5000 [00:05<00:03, 409.10it/s]Pre-process:  72%|███████▏  | 3588/5000 [00:05<00:03, 405.59it/s]Pre-process:  73%|███████▎  | 3635/5000 [00:05<00:03, 401.04it/s]Pre-process:  74%|███████▎  | 3684/5000 [00:05<00:03, 420.69it/s]Pre-process:  75%|███████▍  | 3730/5000 [00:05<00:03, 384.99it/s]Pre-process:  75%|███████▌  | 3772/5000 [00:06<00:03, 338.50it/s]Pre-process:  76%|███████▌  | 3809/5000 [00:06<00:03, 327.69it/s]Pre-process:  77%|███████▋  | 3844/5000 [00:06<00:03, 313.62it/s]Pre-process:  78%|███████▊  | 3877/5000 [00:06<00:03, 302.29it/s]Pre-process:  78%|███████▊  | 3908/5000 [00:06<00:03, 297.37it/s]Pre-process:  79%|███████▉  | 3939/5000 [00:06<00:03, 286.47it/s]Pre-process:  79%|███████▉  | 3968/5000 [00:06<00:03, 281.65it/s]Pre-process:  80%|███████▉  | 3997/5000 [00:06<00:03, 283.51it/s]Pre-process:  81%|████████  | 4026/5000 [00:06<00:03, 284.88it/s]Pre-process:  81%|████████▏ | 4064/5000 [00:07<00:03, 311.34it/s]Pre-process:  82%|████████▏ | 4101/5000 [00:07<00:02, 326.88it/s]Pre-process:  83%|████████▎ | 4134/5000 [00:07<00:02, 315.36it/s]Pre-process:  83%|████████▎ | 4166/5000 [00:07<00:02, 302.10it/s]Pre-process:  84%|████████▍ | 4197/5000 [00:07<00:02, 283.75it/s]Pre-process:  85%|████████▍ | 4226/5000 [00:07<00:02, 275.60it/s]Pre-process:  85%|████████▌ | 4261/5000 [00:07<00:02, 295.53it/s]Pre-process:  86%|████████▌ | 4291/5000 [00:07<00:02, 287.25it/s]Pre-process:  86%|████████▋ | 4320/5000 [00:07<00:02, 284.02it/s]Pre-process:  87%|████████▋ | 4353/5000 [00:08<00:02, 284.90it/s]Pre-process:  88%|████████▊ | 4400/5000 [00:08<00:01, 334.57it/s]Pre-process:  89%|████████▉ | 4456/5000 [00:08<00:01, 397.73it/s]Pre-process:  90%|█████████ | 4512/5000 [00:08<00:01, 444.37it/s]Pre-process:  91%|█████████ | 4558/5000 [00:08<00:01, 431.69it/s]Pre-process:  92%|█████████▏| 4602/5000 [00:08<00:01, 376.44it/s]Pre-process:  93%|█████████▎| 4642/5000 [00:08<00:01, 349.93it/s]Pre-process:  94%|█████████▎| 4679/5000 [00:08<00:00, 336.83it/s]Pre-process:  94%|█████████▍| 4714/5000 [00:09<00:00, 303.18it/s]Pre-process:  95%|█████████▍| 4746/5000 [00:09<00:00, 306.53it/s]Pre-process:  96%|█████████▌| 4778/5000 [00:09<00:00, 280.78it/s]Pre-process:  96%|█████████▌| 4809/5000 [00:09<00:00, 287.22it/s]Pre-process:  97%|█████████▋| 4843/5000 [00:09<00:00, 294.31it/s]Pre-process:  97%|█████████▋| 4873/5000 [00:09<00:00, 273.31it/s]Pre-process:  98%|█████████▊| 4913/5000 [00:09<00:00, 297.01it/s]Pre-process:  99%|█████████▉| 4946/5000 [00:09<00:00, 303.36it/s]Pre-process: 100%|█████████▉| 4977/5000 [00:09<00:00, 303.28it/s]Pre-process: 100%|██████████| 5000/5000 [00:10<00:00, 499.98it/s]
+Basis total: 5
+train_set : test_set = %d : %d 4500 500
+-------- FOLD0 DATASET=COLLAB, COMMIT_ID=62ffe4f61e26add52114c16e87be225fd79dad78
+With batch_norm.
+Without edge_softmax.
+#Params: 732931
+Epoch: 001, Train Loss: 60.4515924, Train Acc: 0.6422222, Test Acc: 0.5980000
+Epoch: 002, Train Loss: 43.4277204, Train Acc: 0.6220000, Test Acc: 0.5920000
+Epoch: 003, Train Loss: 12.2135658, Train Acc: 0.4531111, Test Acc: 0.4440000
+Epoch: 004, Train Loss: 4.2546538, Train Acc: 0.6724444, Test Acc: 0.6740000
+Epoch: 005, Train Loss: 2.9693461, Train Acc: 0.7202222, Test Acc: 0.7300000
+Epoch: 006, Train Loss: 1.8573283, Train Acc: 0.6820000, Test Acc: 0.6740000
+Epoch: 007, Train Loss: 1.8426618, Train Acc: 0.6937778, Test Acc: 0.6780000
+Epoch: 008, Train Loss: 1.2211915, Train Acc: 0.7308889, Test Acc: 0.7320000
+Epoch: 009, Train Loss: 2.0573630, Train Acc: 0.6693333, Test Acc: 0.6540000
+Epoch: 010, Train Loss: 1.4316888, Train Acc: 0.7113333, Test Acc: 0.7300000
+Epoch: 011, Train Loss: 1.2767051, Train Acc: 0.6560000, Test Acc: 0.6300000
+Epoch: 012, Train Loss: 1.3931633, Train Acc: 0.7120000, Test Acc: 0.6660000
+Epoch: 013, Train Loss: 1.1126098, Train Acc: 0.6997778, Test Acc: 0.6960000
+Epoch: 014, Train Loss: 1.2877572, Train Acc: 0.7273333, Test Acc: 0.7100000
+Epoch: 015, Train Loss: 0.9832709, Train Acc: 0.7246667, Test Acc: 0.7240000
+Epoch: 016, Train Loss: 2.7962922, Train Acc: 0.6906667, Test Acc: 0.6260000
+Epoch: 017, Train Loss: 2.5394600, Train Acc: 0.6600000, Test Acc: 0.6400000
+Epoch: 018, Train Loss: 1.1292525, Train Acc: 0.6764444, Test Acc: 0.6620000
+Epoch: 019, Train Loss: 0.7875106, Train Acc: 0.7380000, Test Acc: 0.7400000
+Epoch: 020, Train Loss: 1.3432011, Train Acc: 0.7082222, Test Acc: 0.7140000
+Epoch: 021, Train Loss: 1.3469217, Train Acc: 0.6551111, Test Acc: 0.6580000
+Epoch: 022, Train Loss: 0.7481890, Train Acc: 0.7162222, Test Acc: 0.7200000
+Epoch: 023, Train Loss: 0.6320722, Train Acc: 0.6948889, Test Acc: 0.6580000
+Epoch: 024, Train Loss: 0.6635122, Train Acc: 0.7082222, Test Acc: 0.6580000
+Epoch: 025, Train Loss: 0.7415726, Train Acc: 0.6873333, Test Acc: 0.6700000
+Epoch: 026, Train Loss: 0.5610178, Train Acc: 0.7364444, Test Acc: 0.7220000
+Epoch: 027, Train Loss: 0.6092107, Train Acc: 0.7102222, Test Acc: 0.6800000
+Epoch: 028, Train Loss: 0.7505821, Train Acc: 0.6742222, Test Acc: 0.6220000
+Epoch: 029, Train Loss: 1.0750071, Train Acc: 0.6644444, Test Acc: 0.6580000
+Epoch: 030, Train Loss: 0.7778348, Train Acc: 0.6762222, Test Acc: 0.6820000
+Epoch: 031, Train Loss: 0.8839140, Train Acc: 0.6944444, Test Acc: 0.6620000
+Epoch: 032, Train Loss: 0.5112803, Train Acc: 0.7408889, Test Acc: 0.7280000
+Epoch: 033, Train Loss: 0.5873609, Train Acc: 0.7177778, Test Acc: 0.6960000
+Epoch: 034, Train Loss: 0.8235190, Train Acc: 0.7068889, Test Acc: 0.6660000
+Epoch: 035, Train Loss: 0.5133814, Train Acc: 0.7535556, Test Acc: 0.7200000
+Epoch: 036, Train Loss: 0.5396143, Train Acc: 0.7484444, Test Acc: 0.7020000
+Epoch: 037, Train Loss: 0.5460607, Train Acc: 0.7182222, Test Acc: 0.6780000
+Epoch: 038, Train Loss: 0.5954616, Train Acc: 0.7144444, Test Acc: 0.6700000
+Epoch: 039, Train Loss: 0.5379020, Train Acc: 0.7340000, Test Acc: 0.7160000
+Epoch: 040, Train Loss: 0.5489467, Train Acc: 0.7404444, Test Acc: 0.7180000
+Epoch: 041, Train Loss: 0.5387011, Train Acc: 0.7335556, Test Acc: 0.7280000
+Epoch: 042, Train Loss: 0.5371490, Train Acc: 0.7464444, Test Acc: 0.7160000
+Epoch: 043, Train Loss: 0.4988832, Train Acc: 0.7491111, Test Acc: 0.7400000
+Epoch: 044, Train Loss: 0.5850361, Train Acc: 0.7093333, Test Acc: 0.7140000
+Epoch: 045, Train Loss: 0.6070736, Train Acc: 0.7444444, Test Acc: 0.7300000
+Epoch: 046, Train Loss: 0.5172504, Train Acc: 0.7375556, Test Acc: 0.7460000
+Epoch: 047, Train Loss: 0.7332575, Train Acc: 0.6733333, Test Acc: 0.6460000
+Epoch: 048, Train Loss: 0.5694616, Train Acc: 0.7326667, Test Acc: 0.7120000
+Epoch: 049, Train Loss: 0.8375592, Train Acc: 0.6760000, Test Acc: 0.6660000
+Epoch: 050, Train Loss: 0.6202666, Train Acc: 0.6973333, Test Acc: 0.7060000
+Epoch: 051, Train Loss: 0.5441932, Train Acc: 0.7242222, Test Acc: 0.7180000
+Epoch: 052, Train Loss: 0.5480533, Train Acc: 0.7282222, Test Acc: 0.7280000
+Epoch: 053, Train Loss: 0.5598394, Train Acc: 0.7151111, Test Acc: 0.7100000
+Epoch: 054, Train Loss: 0.5516231, Train Acc: 0.7184444, Test Acc: 0.7140000
+Epoch: 055, Train Loss: 0.5496931, Train Acc: 0.7380000, Test Acc: 0.7100000
+Epoch: 056, Train Loss: 0.5333695, Train Acc: 0.7204444, Test Acc: 0.7200000
+Epoch: 057, Train Loss: 0.5062502, Train Acc: 0.7486667, Test Acc: 0.7300000
+Epoch: 058, Train Loss: 0.5505298, Train Acc: 0.7262222, Test Acc: 0.7060000
+Epoch: 059, Train Loss: 0.5104373, Train Acc: 0.7462222, Test Acc: 0.7420000
+Epoch: 060, Train Loss: 0.5299148, Train Acc: 0.7466667, Test Acc: 0.7160000
+Epoch: 061, Train Loss: 0.5357135, Train Acc: 0.7226667, Test Acc: 0.7080000
+Epoch: 062, Train Loss: 0.5187000, Train Acc: 0.7417778, Test Acc: 0.7200000
+Epoch: 063, Train Loss: 0.5112477, Train Acc: 0.7402222, Test Acc: 0.7260000
+Epoch: 064, Train Loss: 0.5333040, Train Acc: 0.7257778, Test Acc: 0.7020000
+Epoch: 065, Train Loss: 0.5275442, Train Acc: 0.7397778, Test Acc: 0.7240000
+Epoch: 066, Train Loss: 0.5264300, Train Acc: 0.7466667, Test Acc: 0.7160000
+Epoch: 067, Train Loss: 0.4871226, Train Acc: 0.7688889, Test Acc: 0.7380000
+Epoch: 068, Train Loss: 0.4967114, Train Acc: 0.7526667, Test Acc: 0.7120000
+Epoch: 069, Train Loss: 0.5372584, Train Acc: 0.7295556, Test Acc: 0.7340000
+Epoch: 070, Train Loss: 0.5416857, Train Acc: 0.7466667, Test Acc: 0.7280000
+Epoch: 071, Train Loss: 0.5135042, Train Acc: 0.7422222, Test Acc: 0.7380000
+Epoch: 072, Train Loss: 0.4877123, Train Acc: 0.7715556, Test Acc: 0.7320000
+Epoch: 073, Train Loss: 0.5086305, Train Acc: 0.7462222, Test Acc: 0.7120000
+Epoch: 074, Train Loss: 0.4928629, Train Acc: 0.7517778, Test Acc: 0.7280000
+Epoch: 075, Train Loss: 0.4920774, Train Acc: 0.7584444, Test Acc: 0.7240000
+Epoch: 076, Train Loss: 0.5345778, Train Acc: 0.7313333, Test Acc: 0.6900000
+Epoch: 077, Train Loss: 0.4921232, Train Acc: 0.7537778, Test Acc: 0.7140000
+Epoch: 078, Train Loss: 0.5370287, Train Acc: 0.7388889, Test Acc: 0.6900000
+Epoch: 079, Train Loss: 0.5198816, Train Acc: 0.7333333, Test Acc: 0.7080000
+Epoch: 080, Train Loss: 0.5026008, Train Acc: 0.7646667, Test Acc: 0.7300000
+Epoch: 081, Train Loss: 0.4979126, Train Acc: 0.7662222, Test Acc: 0.7260000
+Epoch: 082, Train Loss: 0.4908012, Train Acc: 0.7557778, Test Acc: 0.7280000

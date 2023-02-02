@@ -1,0 +1,21 @@
+{'dataset_name': 'PTC_MR', 'basis': 'GSO', 'epsilon': [-0.3, -0.35, -0.4], 'power': [[1, 8], [1, 8], [1, 8]], 'seeds': [0], 'num_folds': 10, 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 151, 'learning_rate': 0.001, 'step_size': 30, 'decay_rate': 0.65}, 'architecture': {'nonlinear': 'GELU', 'layers': 6, 'hidden': 128, 'pooling': 'X', 'dropout': 0}, 'commit_id': 'bcb4503913543550e15d6926dfc2e00caaa316b0', 'time_stamp': '1673188839', 'directory': '../../../../results_spectral_rotation/Try_A100/tu/PTC_MR/board/'}
+{'dataset_name': 'PTC_MR', 'basis': 'GSO', 'epsilon': [-0.3, -0.35, -0.4], 'power': [[1, 8], [1, 8], [1, 8]], 'seeds': [0], 'num_folds': 10, 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 151, 'learning_rate': 0.001, 'step_size': 30, 'decay_rate': 0.65}, 'architecture': {'nonlinear': 'GELU', 'layers': 6, 'hidden': 128, 'pooling': 'X', 'dropout': 0}, 'commit_id': 'bcb4503913543550e15d6926dfc2e00caaa316b0', 'time_stamp': 1673188840, 'directory': '../../../../results_spectral_rotation/Try_A100/tu/PTC_MR/board/', 'seed': 0}
+Downloading ./dataset/PTC_MR.zip from https://www.chrsmrrs.com/graphkerneldatasets/PTC_MR.zip...
+Extracting file to ./dataset/PTC_MR
+No Node Attribute Data
+Pre-process:   0%|          | 0/344 [00:00<?, ?it/s]Pre-process:  24%|██▍       | 84/344 [00:00<00:00, 835.37it/s]Pre-process:  50%|█████     | 172/344 [00:00<00:00, 859.67it/s]Pre-process:  76%|███████▌  | 260/344 [00:00<00:00, 866.59it/s]Pre-process: 100%|██████████| 344/344 [00:00<00:00, 869.91it/s]
+Basis total: 25
+train_set : test_set = %d : %d 309 35
+-------- FOLD0 DATASET=PTC_MR, COMMIT_ID=bcb4503913543550e15d6926dfc2e00caaa316b0
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/tu/graphml/tu/./main.py", line 263, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/tu/graphml/tu/./main.py", line 259, in main
+    run_model(config)
+  File "/home/mingqi/workspace/spectral_rotation/tu/graphml/tu/./main.py", line 192, in run_model
+    test_accs, train_losses, train_accs = run_given_fold(
+  File "/home/mingqi/workspace/spectral_rotation/tu/graphml/tu/./main.py", line 82, in run_given_fold
+    model = Net(num_feature, num_classes, num_basis, config=config.architecture).to(device)
+  File "/home/mingqi/workspace/spectral_rotation/tu/graphml/tu/model.py", line 25, in __init__
+    if config.batch_norm == 'Y':
+AttributeError: 'EasyDict' object has no attribute 'batch_norm'
