@@ -1,0 +1,25 @@
+NVIDIA A100-SXM4-40GB 7
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': 'ckpt', 'basis': 'SPA', 'epsilon': [-0.2, -0.25, -0.3, -0.35, -0.4, -0.45], 'power': [[1, 3], [1, 3], [1, 3], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0, 1, 2, 3, 4], 'num_workers': 16, 'hyperparams': {'batch_size': 32, 'epochs': 551, 'learning_rate': 0.001, 'decay_rate': 0.65, 'step_size': 35, 'weight_decay': 0, 'warmup_epochs': 0}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.3, 'exp_n': 1}, 'commit_id': '4aba387fcf9488ce7c5e4a21118d02e348dfd6da', 'time_stamp': '1674437089', 'directory': '../../../../results_spectral_rotation/Try_A100/ogbg-ppa/'}
+{'dataset_name': 'ogbg-ppa', 'checkpoint_dir': 'ckpt', 'basis': 'SPA', 'epsilon': [-0.2, -0.25, -0.3, -0.35, -0.4, -0.45], 'power': [[1, 3], [1, 3], [1, 3], [1, 3], [1, 3], [1, 3]], 'edgehop': 1, 'seeds': [0, 1, 2, 3, 4], 'num_workers': 16, 'hyperparams': {'batch_size': 32, 'epochs': 551, 'learning_rate': 0.001, 'decay_rate': 0.65, 'step_size': 35, 'weight_decay': 0, 'warmup_epochs': 0}, 'architecture': {'layers': 4, 'hidden': 384, 'pooling': 'S', 'dropout': 0.3, 'exp_n': 1}, 'commit_id': '4aba387fcf9488ce7c5e4a21118d02e348dfd6da', 'time_stamp': 1674437091, 'directory': '../../../../results_spectral_rotation/Try_A100/ogbg-ppa/', 'seed': 0}
+Converting graphs into DGL objects...
+This will download 2.79GB. Will you proceed? (y/N)
+Using exist file ogbg_ppi_medium.zip
+Extracting dataset/ogbg_ppi_medium.zip
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 330, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 135, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve, task_type = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/./main.py", line 192, in run_with_given_seed
+    dataset = DglGraphPropPred(name=config.dataset_name)
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/ogb/graphproppred/dataset_dgl.py", line 68, in __init__
+    self.pre_process()
+  File "/home/mingqi/workspace/spectral_rotation/ogbg/graphml/ogbg/ppa/../../ogbg/data_preparation.py", line 54, in pre_process
+    extract_zip(path, self.original_root)
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/site-packages/ogb/utils/url.py", line 87, in extract_zip
+    with zipfile.ZipFile(path, 'r') as f:
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/zipfile.py", line 1266, in __init__
+    self._RealGetContents()
+  File "/home/mingqi/anaconda3/envs/pytorch_ogbg/lib/python3.9/zipfile.py", line 1333, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file

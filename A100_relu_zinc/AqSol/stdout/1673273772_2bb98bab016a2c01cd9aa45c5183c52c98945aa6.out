@@ -1,0 +1,25 @@
+NVIDIA A100-SXM4-40GB 3
+{'dataset_name': 'AqSol', 'basis': 'GSO', 'epsilon': [-0.1, -0.2, -0.3, -0.4, -0.5], 'power': [[4, 4], [4, 4], [4, 4], [4, 4], [4, 4]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '2bb98bab016a2c01cd9aa45c5183c52c98945aa6', 'time_stamp': '1673273772', 'directory': '../../../results_spectral_rotation/A100_relu_zinc/AqSol/'}
+{'dataset_name': 'AqSol', 'basis': 'GSO', 'epsilon': [-0.1, -0.2, -0.3, -0.4, -0.5], 'power': [[4, 4], [4, 4], [4, 4], [4, 4], [4, 4]], 'seeds': [0, 1, 2, 3, 4], 'num_workers': 4, 'hyperparams': {'batch_size': 64, 'epochs': 351, 'learning_rate': 0.001, 'decay_rate': 0.6, 'milestones': [40, 75, 110, 145, 180, 215, 250, 305, 340], 'weight_decay': 5e-05, 'warmup_epochs': 5}, 'architecture': {'layers': 6, 'hidden': 160, 'pooling': 'M'}, 'commit_id': '2bb98bab016a2c01cd9aa45c5183c52c98945aa6', 'time_stamp': 1673273775, 'directory': '../../../results_spectral_rotation/A100_relu_zinc/AqSol/', 'seed': 0}
+Basis configurations: basis: GSO, epsilon: [-0.1, -0.2, -0.3, -0.4, -0.5], power: [[4, 4], [4, 4], [4, 4], [4, 4], [4, 4]], degs: []
+Generating 7985 graphs for the TRAIN set...
+Pre-processing:   0%|          | 0/7985 [00:00<?, ?it/s][ 1  2  2  3  3  4  4  5  5  6  6  7  7  8  8  9  9 10 10 11 11 12 12 13
+ 13 14 14 15 15 16 16 17 17 18 18 19 19 20 19 21 19 22]
+---------
+[ 2  1  3  2  4  3  5  4  6  5  7  6  8  7  9  8 10  9 11 10 12 11 13 12
+ 14 13 15 14 16 15 17 16 18 17 19 18 20 19 21 19 22 19]
+Pre-processing:   0%|          | 0/7985 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/mingqi/workspace/spectral_rotation/aqsol/graphml/zinc/./main.py", line 293, in <module>
+    main()
+  File "/home/mingqi/workspace/spectral_rotation/aqsol/graphml/zinc/./main.py", line 113, in main
+    epoch_idx, train_curve, valid_curve, test_curve, trainL_curve = run_with_given_seed(config, ts_fk_algo_hp)
+  File "/home/mingqi/workspace/spectral_rotation/aqsol/graphml/zinc/./main.py", line 164, in run_with_given_seed
+    dataset = MoleculeDataset(name=config.dataset_name, config=config)
+  File "/home/mingqi/workspace/spectral_rotation/aqsol/graphml/zinc/data_preparation.py", line 237, in __init__
+    self.train = MoleculeAqSolDGL(data_dir, 'train', num_graphs=7985, basis=basis, epsilon=epsilon, power=power,
+  File "/home/mingqi/workspace/spectral_rotation/aqsol/graphml/zinc/data_preparation.py", line 136, in __init__
+    self._prepare()
+  File "/home/mingqi/workspace/spectral_rotation/aqsol/graphml/zinc/data_preparation.py", line 171, in _prepare
+    g = dgl.graph((molecule[2][0], molecule[2][1]), num_nodes=molecule['num_atom'])
+TypeError: tuple indices must be integers or slices, not str
